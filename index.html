@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Заказ пиццы</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container"> 
+    <aside class="aside" id="aside">
+      <img src="images/icon-close.svg" alt="icon-close" id="icon-close">
+      <ul role="list" class="aside-list">
+        <li class="aside-item"><a href="/">Пиццы</a></li>
+        <li class="aside-item"><a href="/">Кухня</a></li>
+        <li class="aside-item"><a href="/">Доставка</a></li>
+        <li class="aside-item"><a href="/">Контакты</a></li>
+      </ul>
+    </aside>
+    <div class="nested-container">
+      <header class="header">
+        <div class="header__left">
+          <img src="images/icon-menu.svg" alt="menu" class="aside-icon" id="aside-icon">
+          <div class="logo">
+            <img src="images/logo.svg" alt="">
+          </div>
+          <ul role="list" class="nav-list">
+            <li class="nav-item"><a href="/">Пиццы</a></li>
+            <li class="nav-item"><a href="/">Кухня</a></li>
+            <li class="nav-item"><a href="/">Доставка</a></li>
+            <li class="nav-item"><a href="/">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="header__right">
+          <div class="cart">
+            <img src="images/icon-cart.svg" alt="">
+            <span class="badge">0</span>
+          </div>
+          <div class="avatar">
+            <img src="images/image-avatar.png" alt="">
+          </div>
+        </div>
+      </header>
+      <div class="line"></div>
+    </div>
+    <!-- Product -->
+    <main class="product">
+      <div class="image-container">
+        <div class="product__images">
+          <div class="product__images">
+            <img src="images/1-pizza.png" alt="" class="product__img">
+          </div>
+          <img src="images/icon-previous.svg" alt="previous" class="arrow previous">
+          <img src="images/icon-next.svg" alt="next" class="arrow next">
+        </div>
+        <div class="thumbnails">
+          <div>
+            <div class="thumbnail-border">
+              <img src="images/1-pizza.png" alt="" class="thumbnail">
+            </div>
+            <p class="thumbnails__pizza">Маргарита</p>
+          </div>
+          <div>
+            <div class="thumbnail-border">
+              <img src="images/2-pizza.png" alt="" class="thumbnail">
+            </div>
+            <p class="thumbnails__pizza">Пепперони</p>
+          </div>
+          <div>
+            <div class="thumbnail-border">
+              <img src="images/3-pizza.png" alt="" class="thumbnail">
+            </div>
+            <p class="thumbnails__pizza">Гавайская</p>
+          </div>
+          <div>
+            <div class="thumbnail-border">
+              <img src="images/4-pizza.png" alt="" class="thumbnail">
+            </div>
+            <p class="thumbnails__pizza">4 сыра</p>
+          </div>
+        </div>
+      </div>
+      <div class="nested-container product__body">
+        <div class="product__description">
+          <h2 class="product__title">Маргарита</h2>
+          <p class="product__text">Настоящий вкус Италии в каждом куске! Классическая пицца Маргарита с нежным томатным соусом, богатой моцареллой и ароматным базиликом. Эта пицца представляет собой гармоничное сочетание цветов итальянского флага. Идеальный выбор для ценителей простоты и изысканности. Основные ингредиенты: Томатный соус, моцарелла, свежий базилик.</p>
+        </div>
+        <form action="" id="form-addtocart" class="form">
+          <div class="dropdowns">
+            <select name="dropdownPizzaSize" class="btn dropdown" id="dropdownPizzaSize">
+              <option value="0">Большая пицца</option>
+              <option value="1">Средняя пицца</option>
+              <option value="2">Маленькая пицца</option>
+            </select>
+            <select name="dropdownName" class="btn dropdown" id="dropdownDoughThickness">
+              <option value="Толстый корж">Толстый корж</option>
+              <option value="Тонкий корж">Тонкий корж</option>
+            </select>
+          </div>
+          <div class="toppings">
+            <h3 class="product__title toppings-title">Добавить</h3>
+            <label class="btn product__quantity topping">
+              <div>
+                <input type="checkbox" name="topping" value="Ветчина" data-price="65.00">
+                <span class="checkmark"></span>
+                <span>Ветчина</span>
+              </div>
+              <span class="toppings__price">65 Р</span>
+            </label>
+            <label class="btn product__quantity topping">
+                <div>
+                  <input type="checkbox" name="topping" value="Цыпленок" data-price="60.00">
+                  <span class="checkmark"></span>
+                  <span>Цыпленок</span>
+                </div>
+                <span class="toppings__price">60 Р</span>
+            </label>
+            <label class="btn product__quantity topping">
+              <div>
+                <input type="checkbox" name="topping" value="Сыр" data-price="50.00">
+                <span class="checkmark"></span>
+                <span>Сыр</span>
+              </div>
+              <span class="toppings__price">50 Р</span>
+            </label>
+            <label class="btn product__quantity topping">
+              <div>
+                <input type="checkbox" name="topping" value="Грибы" data-price="45.00">
+                <span class="checkmark"></span>
+                <span>Грибы</span>
+              </div>
+              <span class="toppings__price">45 Р</span>
+            </label>
+            <label class="btn product__quantity topping">
+              <div>
+                <input type="checkbox" name="topping" value="Томаты" data-price="40.00">
+                <span class="checkmark"></span>
+                <span>Томаты</span>
+              </div>
+              <span class="toppings__price">40 Р</span>
+            </label>
+            <label class="btn product__quantity topping">
+              <div>
+                <input type="checkbox" name="topping" value="Огурчики" data-price="35.00">
+                <span class="checkmark"></span>
+                <span>Огурчики</span>
+              </div>
+              <span class="toppings__price">35 Р</span>
+            </label>
+          </div>
+          <div class="product__btns">
+            <div class="product__quantity-container">
+              <input type="number" id="quantityField" name="quantity" class="btn product__quantity">
+              </input>
+              <img src="images/icon-minus.svg" alt="minus" class="minus change-quantity" id="minus">
+              <img src="images/icon-plus.svg" alt="plus" class="plus change-quantity" id="plus">
+            </div>
+            <button type="submit" class="btn product__add" id="btn-add">
+              Добавить в корзину за <span id="totalPrice"></span> Р
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+  <div class="shadow" id="aside-shadow"></div> 
+  <script src="js/script.js"></script>
+</body>
+</html>
