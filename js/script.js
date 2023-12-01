@@ -253,7 +253,7 @@ function showProductInCart() {
 function makeHTMLProductsInCart() {
   allProductsInCartHTML = allProductsInCart.map((p, i) => `
     <div class="product-in-cart">
-      <img class="product-in-cart-img" src="/images/${p.id}-pizza.png" alt="">
+      <img class="product-in-cart-img" src="images/${p.id}-pizza.png" alt="">
       <div class="cartbox__order">
         <p class="bold">${p.title}, ${p.count}, ${p.totalPriceValue} руб.</p>
         <p>${p.pizzaSize}, ${p.doughThickness}</p> 
