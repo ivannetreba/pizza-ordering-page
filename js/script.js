@@ -229,7 +229,7 @@ function createCartBox() {
   cartBox = document.createElement('div');
   cartBox.classList.add(CART_BOX_CLASS);
   cartBox.innerHTML = `
-    <h3 class="${CART_TITLE_CLASS}">Cart</h3>
+    <h3 class="${CART_TITLE_CLASS}">Корзина</h3>
     <div class="${CART_BODY_CLASS}"></div>`;
   container.appendChild(cartBox);
   showProductInCart();
@@ -246,7 +246,7 @@ function showProductInCart() {
     const btnCheckout = document.querySelector('.btn--checkout');
     btnCheckout.addEventListener('click', submitCheckout);
   } else {
-    cartBody.innerHTML = `<p class="cart__empty">Your cart is empty.</p>`;
+    cartBody.innerHTML = `<p class="cart__empty">Ваша корзина пуста</p>`;
   }
 }
 
@@ -260,7 +260,7 @@ function makeHTMLProductsInCart() {
         <p>${p.toppingsInOrder.join(", ")}</p>
       </div>
       <div class="${DELETE_BTN_CLASS}" data-index="${i}">
-        <img src="../images/icon-delete.svg" alt="">
+        <img src="images/icon-delete.svg" alt="">
       </div>
     </div>`
   );
